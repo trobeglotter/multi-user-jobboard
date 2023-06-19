@@ -1,0 +1,21 @@
+<%- include("header") -%>
+
+    <div class="container">
+        <h1 class="home-logo">pepper</h1>
+        <div class="new-post-container">
+            <form class="new-post" action="/user/:userId/posts/new" method="post">
+                <label for=""><input class="new-post-form-component" type="text" name="postTitle"
+                        placeholder="Job Title" autocomplete="off" required>
+                </label>
+                <textarea class="new-post-form-textarea" name="postContent" id="" placeholder="Description"
+                    autocomplete="off" maxlength="500" required></textarea>
+                <label for=""><input class="new-post-form-component" type="text" name="cityCountry"
+                        placeholder="Location" autocomplete="off" required>
+                </label>
+                <label for=""><input class="new-post-form-component" type="text" name="hiringContact"
+                        placeholder="Contact" autocomplete="off" required>
+                </label>
+                <button class="new-post-form-buttom" type="" name="" value=>SAVE</button>
+            </form>
+        </div>
+    </div>

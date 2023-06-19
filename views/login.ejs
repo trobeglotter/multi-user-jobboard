@@ -1,0 +1,12 @@
+<%- include("header") -%>
+
+    <div class="container login-container">
+        <h1 class="home-logo">pepper</h1>
+        <form class="login-form" action="/user/login" method="post">
+            <label for=""><input class="login-signup-inputs" type="email" name="email" placeholder="Email"
+                    autocomplete="off" required></label>
+            <label for=""><input class="login-signup-inputs" type="password" name="password" placeholder="Password"
+                    autocomplete="off" required></label>
+            <button class="login-button" type="submit" name="list" value=>LOG IN</button>
+        </form>
+    </div>

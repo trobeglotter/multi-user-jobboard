@@ -1,0 +1,35 @@
+<%- include("header") -%>
+
+    <div class="container">
+        <div class="user-account-container">
+            <nav>
+                <a class="logo-posts-link" href="/posts/">PEPPER</a>
+                <p class="logout-link"><a href=<%=logout %>>LOG OUT</a></p>
+            </nav>
+            <div class="sub-nav">
+                <a class="user-posts-link" href=<%=userPosts %>>MY POSTS</a>
+                <a class="user-account-link" href=<%=userAccount %>>MY ACCOUNT</a>
+            </div>
+            <div class="user-account-functions">
+                <form id="update-form" action="/user/:userId/account/update" method="post">
+                    <p class="user-account-text">Update your password. Enter current password and new password.</p>
+                    <input class="user-account-form-component" type="email" name="emailUpdate" placeholder="Email"
+                        autocomplete="off" required>
+                    <input class="user-account-form-component" type="password" name="passwordUpdate"
+                        placeholder="Password" autocomplete="off" required>
+
+                    <input class="user-account-form-component" type="password" name="newPasswordUpdate"
+                        placeholder="New Password" autocomplete="off" required>
+                    <button class="deactivate-account-link" type="submit">UPDATE PASSWORD</button>
+                </form>
+                <form id="deactivate-form" action="/user/:userId/account/deactvate" method="post">
+                    <p class="user-account-text">Deactivate your account. Enter your password to confirm.</p>
+                    <input class="user-account-form-component" type="email" name="emailDeactivate" placeholder="Email"
+                        autocomplete="off" required>
+                    <input class="user-account-form-component" type="password" name="passwordDeactivate"
+                        placeholder="Password" autocomplete="off" required>
+                    <button class="deactivate-account-link" type="submit">DEACTIVATE ACCOUNT</button>
+                </form>
+            </div>
+        </div>
+    </div>

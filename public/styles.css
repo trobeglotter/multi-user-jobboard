@@ -1,0 +1,628 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    height: auto;
+    font-family: 'Lexend', sans-serif;
+    background-color: rgb(235, 235, 235);
+}
+
+.container {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    padding: 2% 0;
+}
+
+a {
+    font-weight: 100;
+    text-decoration: none;
+    color: rgb(40, 52, 50);
+    font-size: 20px;
+}
+
+h3 {
+    font-weight: 400;
+    color: rgb(40, 52, 50);
+}
+
+h4 {
+    font-weight: 200;
+}
+
+p {
+    font-weight: 100;
+}
+
+.home-container {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.home-logo {
+    color: rgba(0, 43, 91, 0.5);
+    text-align: center;
+    font-size: 4.25rem;
+    padding-bottom: 1%;
+}
+
+.home-logo-slogan {
+    font-size: 38px;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+#signup-link,
+#login-link {
+    background-color: rgb(37, 109, 133, 0.9);
+    color: rgb(247, 247, 247);
+    margin: 1%;
+    padding: 15px 25px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.login-form,
+.signup-form {
+    margin: auto;
+    margin-bottom: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    width: 70%;
+    background-color: rgb(243, 242, 240);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+}
+
+.login-signup-inputs {
+    width: 70%;
+    padding: 20px 30px;
+    margin: 5px 0 5px 0;
+    display: inline-block;
+    border: none;
+    background-color: rgb(243, 242, 240);
+    border-bottom: 1px solid rgb(40, 52, 50);
+}
+
+.signup-button,
+.login-button {
+    width: 70%;
+    background-color: rgb(37, 109, 133, 0.9);
+    color: rgb(247, 247, 247);
+    margin-top: 2%;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+/* R Nav Bar Links */
+.user-account-link {
+    float: right;
+}
+
+.logout-link {
+    float: right;
+}
+
+.posts-container {
+    width: 70%;
+    margin: auto;
+}
+
+.user-posts-container,
+.user-account-container {
+    width: 70%;
+    margin: auto;
+}
+
+.user-posts {
+    margin: 20% 0;
+}
+
+.single-post-container {
+    margin-top: 5%;
+    padding: 4%;
+    border-radius: 6px;
+    background-color: rgb(243, 242, 240);
+    color: rgb(40, 52, 50);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.job-post-title {
+    background-color: rgb(243, 242, 240);
+    display: inline-block;
+}
+
+.delete-post-link {
+    float: right;
+    display: inline;
+    background-color: rgb(243, 242, 240);
+    color: rgb(37, 109, 133, 0.9);
+    font-weight: 300;
+    border: solid 1px rgb(37, 109, 133, 0.9);
+    padding: 0 2px;
+}
+
+.job-post-content {
+    padding: 3%;
+    background-color: rgb(243, 242, 240);
+}
+
+.job-post-location {
+    display: inline-block;
+    font-weight: 200px;
+    background-color: rgb(243, 242, 240);
+}
+
+.job-post-contact {
+    float: right;
+    font-weight: 200px;
+    background-color: rgb(243, 242, 240);
+}
+
+.job-post-id {
+    background-color: rgb(243, 242, 240);
+}
+
+.new-post-container {
+    width: 70%;
+    margin: auto;
+    padding-bottom: 10%;
+}
+
+.user-dash-header {
+    margin: 5% 0;
+    height: fit-content;
+}
+
+.create-post-link {
+    float: right;
+    color: rgb(247, 247, 247);
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(37, 109, 133, 0.9);
+    border: none;
+    border-radius: 10px;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.new-post-form-component {
+    display: block;
+    width: 50%;
+    margin-bottom: 2%;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: rgb(243, 242, 240);
+    border-radius: 6px;
+    color: rgb(40, 52, 50);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.new-post-form-textarea {
+    height: 200px;
+    width: 100%;
+    resize: none;
+    margin-bottom: 2%;
+    padding: 1%;
+    border: none;
+    outline: none;
+    background-color: rgb(243, 242, 240);
+    border-radius: 6px;
+    color: rgb(40, 52, 50);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.new-post-form-buttom {
+    color: rgb(247, 247, 247);
+    width: 50%;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(37, 109, 133, 0.9);
+    border: none;
+    border-radius: 10px;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.user-account-functions {
+    margin: 5% 0;
+    width: 100%;
+    background-color: rgb(243, 242, 240);
+    padding-bottom: 5%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 6px;
+}
+
+.user-account-text {
+    background-color: rgb(243, 242, 240);
+    padding-bottom: 1%;
+}
+
+#update-form {
+    padding-top: 5%;
+}
+
+#deactivate-form {
+    padding-top: 8%;
+}
+
+#update-form,
+#deactivate-form {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    background-color: rgb(243, 242, 240);
+}
+
+.user-account-form-component {
+    border: none;
+    outline: none;
+    background-color: rgb(243, 242, 240);
+    display: block;
+    padding: 20px 30px;
+    border-bottom: 1px solid rgb(40, 52, 50);
+    width: 80%;
+    margin: auto;
+}
+
+.change-password-link,
+.deactivate-account-link {
+    background-color: rgb(37, 109, 133, 0.9);
+    color: rgb(247, 247, 247);
+    padding: 15px 25px;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    border-radius: 8px;
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: 2%;
+    width: 80%;
+}
+
+.logout-container {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+#logout-slogan {
+    font-size: 38px;
+    margin-bottom: 3%;
+}
+
+#return-to-login {
+    background-color: rgb(37, 109, 133, 0.9);
+    color: rgb(247, 247, 247);
+    padding: 15px 25px;
+    text-decoration: none;
+    /* display: inline-block; */
+    border-radius: 5px;
+    padding-top: 2%;
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        padding: 5% 0;
+    }
+
+    a {
+        font-weight: 100;
+        text-decoration: none;
+        color: rgb(40, 52, 50);
+        font-size: 20px;
+    }
+
+    h3 {
+        font-weight: 400;
+        color: rgb(40, 52, 50);
+    }
+
+    p {
+        font-weight: 100;
+    }
+
+    .home-container {
+        width: 70%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .home-logo {
+        color: rgba(0, 43, 91, 0.5);
+        text-align: center;
+        font-size: 4.25rem;
+        padding-bottom: 1%;
+    }
+
+    .home-logo-slogan {
+        font-size: 38px;
+        margin-bottom: 5%;
+    }
+
+    #signup-link,
+    #login-link {
+        background-color: rgb(37, 109, 133, 0.9);
+        color: rgb(247, 247, 247);
+        margin: 1%;
+        padding: 15px 25px;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    .login-form,
+    .signup-form {
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 20%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-align: center;
+        width: 70%;
+        background-color: rgb(243, 242, 240);
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-radius: 5px;
+    }
+
+    .login-signup-inputs {
+        width: 70%;
+        padding: 8px 10px;
+        margin: 5px 0 5px 0;
+        display: inline-block;
+        border: none;
+        background-color: rgb(243, 242, 240);
+        border-bottom: 1px solid rgb(40, 52, 50);
+        font-size: 12px;
+    }
+
+    .signup-button,
+    .login-button {
+        width: 70%;
+        background-color: rgb(37, 109, 133, 0.9);
+        color: rgb(247, 247, 247);
+        margin-top: 2%;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        border-radius: 10px;
+        font-weight: 100;
+        font-size: 22px;
+    }
+
+    /* R Nav Bar Links */
+    .user-account-link {
+        float: right;
+    }
+
+    .logout-link {
+        float: right;
+    }
+
+    .posts-container {
+        width: 70%;
+        margin: auto;
+    }
+
+    .user-posts-container,
+    .user-account-container {
+        width: 70%;
+        margin: auto;
+    }
+
+    .user-posts {
+        margin: 30% 0;
+    }
+
+    .single-post-container {
+        margin-top: 5%;
+        padding: 4%;
+        border-radius: 6px;
+        background-color: rgb(243, 242, 240);
+        color: rgb(40, 52, 50);
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .job-post-title {
+        background-color: rgb(243, 242, 240);
+        display: inline-block;
+    }
+
+    .delete-post-link {
+        float: right;
+        display: inline;
+        background-color: rgb(243, 242, 240);
+        color: rgb(37, 109, 133, 0.9);
+        font-weight: 200;
+        border: solid 1px rgb(37, 109, 133, 0.9);
+        padding: 0 2px;
+    }
+
+    .job-post-content {
+        padding: 3%;
+        background-color: rgb(243, 242, 240);
+    }
+
+    .job-post-location {
+        display: inline-block;
+        font-weight: 200px;
+        background-color: rgb(243, 242, 240);
+
+    }
+
+    .job-post-contact {
+        float: none;
+        display: block;
+        font-weight: 200px;
+        background-color: rgb(243, 242, 240);
+
+    }
+
+    .job-post-id {
+        background-color: rgb(243, 242, 240);
+        font-weight: 200px;
+    }
+
+    .new-post-container {
+        width: 70%;
+        margin: auto;
+        padding-bottom: 10%;
+        margin-top: 5%;
+    }
+
+    .user-dash-header {
+        margin: 5% 0;
+        height: fit-content;
+    }
+
+    .create-post-link {
+        float: right;
+        color: rgb(247, 247, 247);
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        background-color: rgb(37, 109, 133, 0.9);
+        border: none;
+        border-radius: 10px;
+        font-weight: 100;
+        font-size: 18px;
+    }
+
+    .new-post-form-component {
+        display: block;
+        width: 70%;
+        margin-bottom: 2%;
+        padding: 10px 25px;
+        border: none;
+        outline: none;
+        background-color: rgb(243, 242, 240);
+        border-radius: 6px;
+        color: rgb(40, 52, 50);
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .new-post-form-textarea {
+        height: 200px;
+        width: 100%;
+        resize: none;
+        margin-bottom: 2%;
+        padding: 1%;
+        border: none;
+        outline: none;
+        background-color: rgb(243, 242, 240);
+        border-radius: 6px;
+        color: rgb(40, 52, 50);
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .new-post-form-buttom {
+        color: rgb(247, 247, 247);
+        width: 70%;
+        padding: 10px 25px;
+        text-align: center;
+        text-decoration: none;
+        background-color: rgb(37, 109, 133, 0.9);
+        border: none;
+        border-radius: 10px;
+        font-weight: 100;
+        font-size: 20px;
+    }
+
+    .user-account-functions {
+        margin: 5% 0;
+        width: 100%;
+        background-color: rgb(243, 242, 240);
+        padding-bottom: 5%;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-radius: 6px;
+    }
+
+    .user-account-text {
+        background-color: rgb(243, 242, 240);
+        padding-bottom: 1%;
+    }
+
+    #update-form {
+        padding-top: 5%;
+    }
+
+    #deactivate-form {
+        padding-top: 8%;
+    }
+
+    #update-form,
+    #deactivate-form {
+        margin: auto;
+        text-align: center;
+        width: 80%;
+        background-color: rgb(243, 242, 240);
+    }
+
+    .user-account-form-component {
+        border: none;
+        outline: none;
+        background-color: rgb(243, 242, 240);
+        display: block;
+        padding: 8px 10px;
+        border-bottom: 1px solid rgb(40, 52, 50);
+        width: 80%;
+        margin: auto;
+        font-size: 12px;
+    }
+
+    .change-password-link,
+    .deactivate-account-link {
+        background-color: rgb(37, 109, 133, 0.9);
+        color: rgb(247, 247, 247);
+        padding: 15px 0px;
+        text-decoration: none;
+        display: inline-block;
+        border: none;
+        border-radius: 8px;
+        font-weight: 100;
+        font-size: 12px;
+        margin-top: 4%;
+        width: 80%;
+    }
+
+    .logout-container {
+        width: 70%;
+        margin: auto;
+        text-align: center;
+    }
+
+    #logout-slogan {
+        font-size: 38px;
+        margin-bottom: 12%;
+    }
+
+    #return-to-login {
+        background-color: rgb(37, 109, 133, 0.9);
+        color: rgb(247, 247, 247);
+        padding: 18px 60px;
+        text-decoration: none;
+        border-radius: 5px;
+        /* padding-top: 8%; */
+        width: 100%;
+    }
+}

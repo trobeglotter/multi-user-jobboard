@@ -1,0 +1,17 @@
+<%- include("header") -%>
+
+        <div class="container signup-container">
+                <h1 class="home-logo">pepper</h1>
+                <form class="signup-form" action="/user/new/" method="post">
+                        <label for=""> <input class="login-signup-inputs" type="email" name="email" placeholder="Email"
+                                        autocomplete="off" required>
+                        </label>
+                        <label for=""> <input class="login-signup-inputs" type="password" name="password"
+                                        placeholder="Password" autocomplete="off" required>
+                        </label>
+                        <label for=""><input class="login-signup-inputs" type="password" name="confirmPassword"
+                                        placeholder="Confirm Password" autocomplete="off" required>
+                        </label>
+                        <button class="signup-button" type="submit" name="list" value=>SIGN UP</button>
+                </form>
+        </div>

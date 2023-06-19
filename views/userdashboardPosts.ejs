@@ -1,0 +1,47 @@
+<%- include("header") -%>
+
+    <div class="container">
+        <div class="user-posts-container">
+            <nav>
+                <a class="logo-posts-link" href="/posts/">PEPPER</a>
+                <p class="logout-link"><a href=<%=logout %>>LOG OUT</a></p>
+            </nav>
+            <div class="sub-nav">
+                <a class="user-posts-link" href=<%=userPosts %>>MY POSTS</a>
+                <a class="user-account-link" href=<%=userAccount %>>MY ACCOUNT</a>
+            </div>
+            <div class="user-dash-header">
+                <a class="create-post-link" href=<%=newPost %>
+                    <p>CREATE POST</p>
+                </a>
+            </div>
+            <div class="user-posts">
+                <% jobPosts.forEach(jobPost=> { %>
+                    <div>
+                        <div class="single-post-container">
+
+                            <h3 class="job-post-title">
+                                <%= jobPost.post_title %>
+                            </h3>
+                            <a href=<%=jobPost.post_id %>>
+                                <p class="delete-post-link">DELETE</p>
+                            </a>
+
+                            <p class="job-post-content">
+                                <%= jobPost.post_content%>
+                            </p>
+                            <p class="job-post-id">Post ID:
+                                <%= jobPost.post_id %>
+                            </p>
+                            <h4 class="job-post-location">Location:
+                                <%= jobPost.city_country %>
+                            </h4>
+                            <h4 class="job-post-contact">Contact:
+                                <%= jobPost.hiring_contact %>
+                            </h4>
+                        </div>
+                    </div>
+                    <% }) %>
+            </div>
+        </div>
+    </div>
