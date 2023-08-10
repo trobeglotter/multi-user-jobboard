@@ -1,5 +1,5 @@
 Multi User Job Board\
-Project Link: https://pepper-jobboard-ndb-production.up.railway.app/\
+Project Link: https://pepper-jobboard-ndb-production.up.railway.app/
 
 Installation Instructions\
 npm run devStart\
